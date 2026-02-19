@@ -7,8 +7,9 @@ terraform {
   }
   backend "s3" {
     bucket = "choco-jag-26"
-    key    = "path/to/my/key"
+    key    = "remote-state-lock"
     region = "us-east-1"
+    use_lockfile = true
   }
 }
 
