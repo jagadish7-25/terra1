@@ -9,7 +9,7 @@ resource "aws_instance" "terraform" {
 }
 
 resource "aws_security_group" "allow_all" {
-  name   = "allow-all"
+  name   = "allow-all-2"
 
   egress {
     from_port        = 0 # from port 0 to to port 0 means all ports
@@ -26,7 +26,7 @@ resource "aws_security_group" "allow_all" {
   }
 
   tags = {
-    Name = "allow-all"
+    Name = "allow-all-2"
   }
 
 }
